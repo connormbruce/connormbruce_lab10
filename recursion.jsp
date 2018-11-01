@@ -11,7 +11,7 @@
  * 
  * This lab tests your ability to implement recursion for several functions.
  * 
- * @author Stephen
+ * @author Connor using Stephens
  * @version 2018-04-23
  * @Edited by Mukhtar to make compatible with JSP on 2018-10-20
  */
@@ -71,7 +71,6 @@ public int fibonacci(int n)
    		}
      
      return fibonacci(n-1) + fibonacci(n-2);
-
 }
     /**
      * Class that represents a tree. This is a data structure comprised of several nodes. Each node may
@@ -164,7 +163,7 @@ public int treeSum(Tree tree)
 {
     int sum = tree.getValue();
     
-    for (Tree s: tree.children)
+    for (Tree s: tree.getChildren())
     {
     	sum += treeSum(s);
     }
